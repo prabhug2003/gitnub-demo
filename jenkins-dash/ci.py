@@ -73,7 +73,6 @@ def get_job_table(res):
         style_data_conditional=[
         {
             'if': {
-                'column_id': 'buildResult',
                 'filter_query': '{buildResult} eq "FAILURE"'
             },
             'backgroundColor': 'red',
@@ -81,7 +80,6 @@ def get_job_table(res):
         },
         {
             'if': {
-                'column_id': 'buildResult',
                 'filter_query': '{buildResult} eq "SUCCESS"'
             },
             'backgroundColor': 'green',
@@ -89,7 +87,6 @@ def get_job_table(res):
         },
         {
             'if': {
-                'column_id': 'buildResult',
                 'filter_query': '{buildResult} eq "UNKNOWN"'
             },
             'backgroundColor': 'yellow',
