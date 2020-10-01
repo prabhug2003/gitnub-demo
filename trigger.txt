@@ -1,2 +1,1 @@
-check
 AU_update
