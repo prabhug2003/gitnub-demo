@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'set PATH=C:/Program Files/Git/bin;%PATH% & git clone https://github.com/prabhug2003/gitnub-demo.git C:/Users/mc93246/VC/gitnub-demo & python C:/Users/mc93246/VC/git-trigger.py'
+                sh 'set PATH=C:/Program Files/Git/usr/bin;%PATH% & set PATH=C:/Program Files/Git/bin;%PATH% & git clone https://github.com/prabhug2003/gitnub-demo.git C:/Users/mc93246/VC/gitnub-demo & python C:/Users/mc93246/VC/git-trigger.py'
             }
         }
     }
